@@ -54,7 +54,7 @@ $(document).ready(function() {
 			
 			showPage2Elements("#fast", 1000);
 			showPage2Elements("#intuitive", 1100);
-			showPage2Elements("#responsive", 1200);
+			showPage2Elements("#responsive",1200);
 
 
 		//scroll up to <= 1px:
