@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway&display=swap" />
+		<link rel="stylesheet" type="text/css" href="./css/animate.css" />
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+		<!-- Firebase stuff: -->
+		<script src="/__/firebase/6.1.1/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			 https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+		<!-- Initialize Firebase -->
+		<script src="/__/firebase/init.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- TODO: switch VUE.js Development Version to production  -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="./js/animationsController.js"></script>
+		<script src="./js/onePageScroll.js"></script>
+
+		<title>Jack Pawela</title>
+	</head>
+	<body>
+				<div id="backgrounddiv"></div>
+		<div id="page1">
+			<div id="top" class="top center">
+				<img id="headshot" class="headshot animated bounceInDown" src="./resources/headshot.png" alt="Jack Pawela" />
+				<h1 class="name animated" id="name">jack pawela</h1>
+				<h2 class="tagline animated" id="headline">web developer, consultant & more</h2>
+				<button id="scrolldown" class="animated" onclick="scrollWin(0, 5)">see my page. <span>&rarr;</span></button>
+			</div>
+			<div class="line"></div>
+			<div class="middle">
+				<div class="about animated">
+					<h3>about me.</h3>
+					<p class="abouttext">I'm a front-end web developer, a blockchain-focused consulant and a technical writer. I'm also studying Business Administration at Cal Poly. I'm the VP of Education at <a class="inline_link" href="http://www.calpolyblockchain.com" target="_blank">Blockchain at Cal Poly</a> and the VP of Tours at <a class="inline_link" href="https://cpentrepreneurs.com" target="_blank">Cal Poly Entrepreneurs</a>. I've consulted for Altium, LLC. doing research into blockchain technology. I'm an author for Data Driven Investor, where I contributed <a class="inline_link" href="https://medium.com/datadriveninvestor/a-case-for-student-loan-forgiveness-f19b88a61823" target="_blank">"A Case For Student Loan Forgiveness"</a>. I also enjoy playing the guitar, surfing and photography.</p>
+				</div>
+				<div class="contact animated">
+					<h3>let's get in touch.</h3>
+					<div class="contactlinks">
+						<div class="link">
+							<a href="mailto:jpawela@calpoly.edu" target="_blank"><span><img id="emailimg" class="contactimg" src="./resources/email.png" />email</span></a>
+						</div>
+						<div class="link">
+							<a href="https://www.linkedin.com/in/jack-pawela/" target="_blank"><span><img id="linkedinimg" class="contactimg" src="./resources/linkedin.png" />linkedin</span></a>
+						</div>
+					</div>
+					<div class="footer">
+						<p class="footertext">designed &amp; coded by me.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page2">
+			<div class="center serviceDesc">
+				<h1 id="page2title" class="name animated">web development</h1>
+				<h2 id="page2tagline" class="tagline animated">custom static &amp; dynamic pages, made to your specs.</h2>
+				<div id="page2content">
+					<div id="fast" class="inline-block page2element">
+						<img class="page2images" src="./resources/fastEdited.png">
+						<h3>Fast</h3>
+						<h4 class="page2description">Building a quick, lag-free experience is my number one priority.</h4>
+					</div>
+					<div id="intuitive" class="inline-block page2element">
+						<img class="page2images" src="./resources/intuitiveEdited.png">
+						<h3>Intuitive</h3>
+						<h4 class="page2description">Users should feel comfortable using a site from the moment it loads<h4>
+					</div>
+					<div id="responsive" class="inline-block page2element">
+						<img class="page2images" src="./resources/responsiveEdited.png">
+						<h3>Responsive</h3>
+						<h4 class="page2description">Websites shouldn't be restricted to desktops. I'll make your site look beautiful on any medium.</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page3">
+			<div class="center serviceDesc">
+				<h1 id="page3title" class="name animated">blockchain consulting</h1>
+				<h2 id="page3tagline" class="tagline animated">find out if blockchain is the right choice for your business.</h2>
+			</div>
+		</div>
+	</body>
+</html>
