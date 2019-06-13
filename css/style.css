@@ -133,7 +133,12 @@ a {
 	margin-right: 10px;
 }
 
-#linkedinimg, #githubimg {
+#linkedinimg {
+	margin-right: 16.09px;
+	margin-left: 5.5px;
+}
+
+#githubimg {
 	margin-right: 16.09px;
 	margin-left: 5.5px;
 }
