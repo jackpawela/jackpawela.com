@@ -63,6 +63,7 @@ $(document).ready(function() {
 			$("#page2").removeClass("active");
 		}
 
+/*
 		//scroll down 500px:
 		if(height > 1000) {
 			$("#page3").css("top", "1000px");
@@ -83,5 +84,6 @@ $(document).ready(function() {
 			$("#page3").addClass("inactive");
 			$("#page3").removeClass("active");
 		}
+*/ 
 	});
 });
