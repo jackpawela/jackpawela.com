@@ -1,3 +1,7 @@
+var distance1 = 1;
+var distance2 = 400;
+var distance3 = 1000;
+
 function scrollWin(x, y) {
 	window.scrollBy(x, y);
 }
@@ -17,8 +21,8 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		var height = $(window).scrollTop();
 
-		//scroll down 1px:
-		if(height > 1) {
+		//scroll down distance1:
+		if(height > distance1) {
 			$("#top").css("animation-duration", "0.5s");
 			$("#top").css("animation-name", "shorten");
 			$("#top").css("animation-timing-function", "ease-in-out");
@@ -37,8 +41,8 @@ $(document).ready(function() {
 			}, 500);
 		}
 
-		//scroll down 250px:
-		if(height  > 400) {
+		//scroll down distance2:
+		if(height  > distance2) {
 			$("#page2").css("top", "1000px");
 			$("#page2").css("visibility", "visible");
 			$("#page2").addClass("active");
@@ -57,15 +61,15 @@ $(document).ready(function() {
 			showPage2Elements("#responsive",1200);
 
 
-		//scroll up to <= 1px:
+		//scroll up to <= distance2:
 		} else {
 			$("#page2").addClass("inactive");
 			$("#page2").removeClass("active");
 		}
 
 /*
-		//scroll down 500px:
-		if(height > 1000) {
+		//scroll down distance3:
+		if(height > distance3) {
 			$("#page3").css("top", "1000px");
 			$("#page3").css("visibility", "visible");
 			$("#page3").addClass("active");
@@ -79,7 +83,7 @@ $(document).ready(function() {
 				$("#page3tagline").addClass("bounceInDown");
 			}, 400);
 
-		//scroll up to <= 50px
+		//scroll up to <= distance3
 		} else {
 			$("#page3").addClass("inactive");
 			$("#page3").removeClass("active");
